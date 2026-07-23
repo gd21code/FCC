@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form Project</h1>
+
+    <p id="description">This is a simple survey form built entirely in HTML.</p>
+    
+    <!--Basic Info Fieldset-->
+    <form id="survey-form">
+      <fieldset>
+        <legend>Basic Info</legend>
+
+        <input 
+        id="name" 
+        name="choice"
+        type="text"
+        required
+        placeholder="Enter your name">
+        </input>
+        <label id="name-label">Name</label><br><br>
+      
+        <input
+        id="email"
+        name="choice"
+        type="email"
+        required
+        placeholder="Enter your email">
+        </input>
+        <label id="email-label">E-mail</label><br><br>
+
+        <input 
+        id="number"
+        name="choice"
+        type="number"
+        min="1"
+        max="100"
+        placeholder="Select">
+        <label id="number-label">Age</label><br>
+      </fieldset><br>
+
+      <!--Dropdown Question Fieldset-->
+      <fieldset>
+        <legend>Generic Dropdown Question</legend>
+
+        <label for="dropdown">Choose an option:</label>
+        <select 
+        id="dropdown"
+        name="dropdown">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        </select>
+      </fieldset><br>  
+
+      <!--Radio Question Fieldset-->     
+      <fieldset>
+        <legend>Generic Radio Question</legend>
+
+        <input 
+        id="yes-option"
+        type="radio"
+        name="yes-no"
+        value="yes">
+        <label for="yes-option">Yes</label>
+
+        <input 
+        id="no-option"
+        type="radio"
+        name="yes-no"
+        value="no">
+        <label for="no-option">No</label><br>
+      </fieldset><br>
+
+      <!--Checkbox Question Fieldset-->
+      <fieldset>
+        <legend>Generic Checkbox Question</legend>
+        <input 
+        type="checkbox" 
+        id="Fee" 
+        name="choice" 
+        value="Fee">
+        <label for="Fee">Fee</label>
+
+        <input
+        type="checkbox" 
+        id="Fi" 
+        name="choice" 
+        value="Fi">
+        <label for="Fi">Fi</label>
+
+        <input
+        type="checkbox" 
+        id="Fo" 
+        name="choice" 
+        value="Fo">
+        <label for="Fo">Fo</label>
+
+        <input
+        type="checkbox" 
+        id="Fum" 
+        name="choice" 
+        value="Fum">
+        <label for="Fum">Fum</label><br>
+      </fieldset><br>
+
+      <!--Comment Box Fieldset-->
+      <fieldset>
+        <legend>Other Comments?</legend>
+        <textarea 
+        cols="30" 
+        rows="10">Enter comments here.</textarea>
+      </fieldset>  
+
+      <!--Submit Button-->
+      <button id="submit">Submit</submit>
+    </form>
+  </body>
+</html>
