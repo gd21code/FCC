@@ -1,0 +1,51 @@
+#playing-cards {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.left {
+  width: 20px;
+  height: 20px;
+  align-self: flex-start;
+  text-align: center;
+}
+
+.middle {
+  width: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.right {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+
+}
+
+.three {
+  color: red;
+}
