@@ -1,0 +1,11 @@
+@media (min-width: 300px) {
+  body {
+    background: black;
+    color: white;
+  }
+}
+
+header {
+  font-size: 30px;
+  margin: 20px 0;
+}
